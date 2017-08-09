@@ -10,7 +10,7 @@ script:
 deploy:
   provider: heroku
   api_key: $HEROKU_AUTH_TOKEN
-  app: oslopinball.no
+  app: oslopinball
   skip_cleanup: true
 notifications:
   email: false
