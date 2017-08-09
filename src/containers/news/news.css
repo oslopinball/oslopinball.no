@@ -1,0 +1,27 @@
+.line-clamp {
+    display: -webkit-box;
+    overflow : hidden;
+
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.mbn {
+    margin-bottom: 0;
+}
+.mbs {
+    margin-bottom: 5px;
+}
+
+.mbm {
+    margin-bottom: 10px;
+}
+
+.mbl {
+    margin-bottom: 15px;
+}
+
+.center {
+    text-align: center;
+}

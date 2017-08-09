@@ -1,0 +1,30 @@
+{
+  "name": "oslopinball",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "8.1.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "express": "^4.15.4",
+    "express-static": "^1.2.4",
+    "isomorphic-fetch": "^2.2.1",
+    "moment": "^2.18.1",
+    "react": "^15.6.0",
+    "react-dom": "^15.6.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "concurrently 'npm run server' 'npm run start-client'",
+    "start-client": "react-scripts start",
+    "server": "env $(cat .env) node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "postinstall": "npm run build"
+  },
+  "proxy": "http://localhost:4000"
+}
