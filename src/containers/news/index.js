@@ -71,7 +71,8 @@ export default class News extends React.Component {
         <EventList events={this.state.events.upcoming} fallback="Ingen planlagte arrangementer."/>
       </div>
     );
-    const previousEvents = this.state.events.previous && (
+
+    const previousEvents = this.state.events.past && (
       <div>
         <h2 className="major">Tidligere arrangementer</h2>
         <EventList events={this.state.events.past} fallback="Ingen arrangementer."/>
