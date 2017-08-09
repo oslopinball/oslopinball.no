@@ -2,7 +2,7 @@ const express = require('express');
 const http = require('https');
 const moment = require('moment');
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 const accessToken = `${process.env.FACEBOOK_APPID}|${process.env.FACEBOOK_SECRET}`;
 moment.locale('nb');
 
